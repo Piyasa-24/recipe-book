@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOGIN/SIGNUP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/login.css">
+  <link rel="stylesheet" href="../style/nav.css">
+</head>
+<body>
+    
+  <div class="main-container">
+    <div class="form-container">
+        <form id="signupForm">
+        <input class="form-input" type="email" placeholder="Email" required />
+        <input class="form-input" type="password" placeholder="Password" required />
+        <input class="form-input" type="password" placeholder="Confirm Password" required />
+        <button type="submit">Sign Up</button>
+        <div class="toggle">Already have an account? <a onclick="toggleForms()">Login</a></div>
+      </form>
+    </div>
+    </div>
+    <script src="../js/nav.js"></script>
+  <script src="../js/data.js"></script>
+  <script>
+    function toggleForms() {
+      const loginForm = document.getElementById("loginForm");
+      const signupForm = document.getElementById("signupForm");
+      loginForm.classList.toggle("active");
+      signupForm.classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOGIN/SIGNUP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/login.css">
+  <link rel="stylesheet" href="../style/nav.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo" onclick="window.location.href='index.html'">Hungry Passport</div>
+
+    <div class="nav-options montserrat-semibold">
+      <a href="allrecipe.html">All Recipes</a>
+
+      <a href="#" class="dropdown-toggle">By nutrients <i class="fa-solid fa-caret-down"></i></a>
+      <div class="dropdown-menu nutrients-dropdown">
+        <a href="nutrients.html?nutrient=protein">Protein Rich</a>
+        <a href="nutrients.html?nutrient=carb">Carbs Rich</a>
+        <a href="nutrients.html?nutrient=fibre">Fiber Rich</a>
+        <a href="nutrients.html?nutrient=vitamin">Vitamin Rich</a>
+        <a href="nutrients.html?nutrient=mineral">Minerals Rich</a>
+      </div>
+
+      <a href="#" class="dropdown-toggle">By countries <i class="fa-solid fa-caret-down"></i></a>
+      <div class="dropdown-menu countries-dropdown">
+        <a href="country.html?cuisine=american">USA</a>
+        <a href="country.html?cuisine=italian">Italy</a>
+        <a href="country.html?cuisine=indian">India</a>
+        <a href="country.html?cuisine=japanese">Japan</a>
+        <a href="country.html?cuisine=mexican">Mexico</a>
+      </div>
+
+      <a href="occasions.html">Occasions</a>
+      <a href="helpfulTips.html">Helpful tips</a>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-bar-input" placeholder="Search any recipe here" class="montserrat" />
+      </div>
+    </div>
+
+    <div class="other-options">
+      <i class="fa-solid fa-house" onclick="window.location.href='index.html'"></i>
+      <i class="fas fa-user" onclick="window.location.href='login.html'"></i>
+    </div>
+  </nav>
+
+  <div class="main-container">
+    <h2 class="heading">Welcome to Hungry Passport</h2>
+
+    <div class="form-container">
+      <form id="loginForm" class="active">
+        <input class="form-input" type="email" placeholder="Email" required />
+        <input class="form-input" type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <div class="toggle">Don't have an account? <a onclick="toggleForms()">Sign up</a></div>
+      </form>
+
+      <form id="signupForm">
+        <input class="form-input" type="email" placeholder="Email" required />
+        <input class="form-input" type="password" placeholder="Password" required />
+        <input class="form-input" type="password" placeholder="Confirm Password" required />
+        <button type="submit">Sign Up</button>
+        <div class="toggle">Already have an account? <a onclick="toggleForms()">Login</a></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/data.js"></script>
+  <script>
+    function toggleForms() {
+      const loginForm = document.getElementById("loginForm");
+      const signupForm = document.getElementById("signupForm");
+      loginForm.classList.toggle("active");
+      signupForm.classList.toggle("active");
+    }
+  </script>
+
+</body>
+
+</html>

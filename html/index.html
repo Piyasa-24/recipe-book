@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME PAGE</title>
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="stylesheet" href="../style/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo" onclick="window.location.href='index.html'">Hungry Passport</div>
+
+    <div class="nav-options montserrat-semibold">
+      <a href="allrecipe.html">All Recipes</a>
+
+      <a href="#" class="dropdown-toggle">By nutrients <i class="fa-solid fa-caret-down"></i></a>
+      <div class="dropdown-menu nutrients-dropdown">
+        <a href="nutrients.html?nutrient=protein">Protein Rich</a>
+        <a href="nutrients.html?nutrient=carb">Carbs Rich</a>
+        <a href="nutrients.html?nutrient=fibre">Fiber Rich</a>
+        <a href="nutrients.html?nutrient=vitamin">Vitamin Rich</a>
+        <a href="nutrients.html?nutrient=mineral">Minerals Rich</a>
+      </div>
+
+      <a href="#" class="dropdown-toggle">By countries <i class="fa-solid fa-caret-down"></i></a>
+      <div class="dropdown-menu countries-dropdown">
+        <a href="country.html?cuisine=american">USA</a>
+        <a href="country.html?cuisine=italian">Italy</a>
+        <a href="country.html?cuisine=indian">India</a>
+        <a href="country.html?cuisine=japanese">Japan</a>
+        <a href="country.html?cuisine=mexican">Mexico</a>
+      </div>
+
+      <a href="occasions.html">Occasions</a>
+      <a href="helpfulTips.html">Helpful tips</a>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-bar-input" placeholder="Search any recipe here" class="montserrat" />
+      </div>
+    </div>
+
+    <div class="other-options">
+      <i class="fa-solid fa-house" onclick="window.location.href='index.html'"></i>
+      <i class="fas fa-user" onclick="window.location.href='login.html'"></i>
+    </div>
+  </nav>
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="header">
+        Your Passport to<br><span class="highlight">World</span> Flavours.
+      </h1>
+      <p class="description">
+        “Our website is a one-stop destination for food lovers, offering a wide variety of dishes from around the
+        world. Whether you're a beginner or a seasoned chef, you'll find easy-to-follow recipes, step-by-step
+        instructions, and helpful tips.”
+      </p>
+      <button id="scroll-to-recipes" class="hero-btn">SEE OUR BEST RECIPE</button>
+    </div>
+    <div class="hero-image">
+      <img src="../assets/food.png" alt="Delicious Dish" />
+    </div>
+  </section>
+  <section class="best-recipes-section" id="best-recipes">
+    <div class="best-recipes-header">See our best recipes</div>
+    <div class="recipe-section">
+      <div class="card" onclick="window.location.href='recipe.html?recipe=chickenBiryani'">
+        <img src="../assets/chicken_biriyani.png" alt="Chicken Biriyani Pic" class="card-image" />
+        <div class="card-description">
+          <h3>Chicken Biryani</h3>
+          <p>
+            A fragrant and flavorful dish made with basmati rice, tender chicken, and a blend of aromatic spices.
+            Perfectly layered and slow-cooked for a rich, savory taste that captures the essence of traditional Indian
+            cuisine.
+          </p>
+        </div>
+      </div>
+      <div class="card" onclick="window.location.href='recipe.html?recipe=spaghetti'">
+        <img src="../assets/spagetti.png" alt="Spaghetti Pic" class="card-image" />
+        <div class="card-description">
+          <h3>Spaghetti</h3>
+          <p>
+            A classic Italian pasta dish made with perfectly cooked spaghetti noodles, tossed in a rich tomato sauce
+            with garlic, olive oil, and fresh herbs. Often topped with grated parmesan and served with garlic bread.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" onclick="window.location.href='recipe.html?recipe=kebab'">
+        <img src="../assets/kebab_with_potato.png" alt="Kebab with Potatoes Pic" class="card-image" />
+        <div class="card-description">
+          <h3>Kebab With Potatoes</h3>
+          <p>
+            Juicy, spiced meat kebabs served alongside crispy roasted or mashed potatoes. This hearty dish blends smoky
+            grilled flavors with the comforting taste of seasoned potatoes for a satisfying meal.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" onclick="window.location.href='recipe.html?recipe=lasagna'">
+        <img src="../assets/lasagna.png" alt="Lasagna Pic" class="card-image" />
+        <div class="card-description">
+          <h3>Lasagna</h3>
+          <p>
+            A layered Italian casserole made with sheets of pasta, savory meat sauce, creamy béchamel, and melted
+            cheese. Baked to perfection, lasagna offers a rich and comforting blend of flavors in every bite.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="top-recipe-of-the-week-section">
+    <img src="../assets/orange_cheesecake.png" alt="Orange Cheescake" class="top-recipe-image">
+    <div class="top-recipe-desc">
+      <p class="liked-by-percentage">90% of our users made this recipe</p>
+      <h3 class="top-recipe-header" onclick="window.location.href='recipe.html?recipe=orange_cheesecake'">MIGHTY SUPER
+        ORANGE
+        CHEESECAKE <i class="fa-solid fa-arrow-right"></i></h3>
+      <p class="top-recipe-paragraph">Look no further for a creamy and ultra smooth classic cheesecake recipe!
+        No one can deny its simple decandence</p>
+    </div>
+  </section>
+  <section class="customer-reviews-section">
+    <div class="review-header">See our customer reviews</div>
+    <div class="review-cards-section">
+      <div class="review-card">
+        <div class="review-cheader">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&auto=format&fit=crop&q=60"
+            alt="Customer 1" class="customer-img" />
+          <h4 class="customer-name">Olivia Brown</h4>
+        </div>
+        <div class="review-desc">
+          <p>
+            “Absolutely loved the fresh ingredients and the portion size was perfect. A delightful experience from start
+            to finish!”
+          </p>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-cheader">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=600&auto=format&fit=crop&q=60"
+            alt="Customer 2" class="customer-img" />
+          <h4 class="customer-name">Liam Johnson</h4>
+        </div>
+        <div class="review-desc">
+          <p>
+            “The service was outstanding and the food was even better! The lasagna is a must-try — rich, cheesy, and
+            flavorful.”
+          </p>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-cheader">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&auto=format&fit=crop&q=60"
+            alt="Customer 3" class="customer-img" />
+          <h4 class="customer-name">Sophia Martinez</h4>
+        </div>
+        <div class="review-desc">
+          <p>
+            “The pizza was divine — crispy crust, fresh toppings, and just the right amount of cheese. Highly recommend
+            this place!”
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <footer class="footer">
+    <!-- Newsletter Section -->
+    <div class="newsletter">
+      <div class="newsletter-text">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our newsletter and get 20% off your first purchase</p>
+      </div>
+      <form class="newsletter-form" onsubmit="subscribe(event)">
+        <input type="email" placeholder="Your Email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Footer Nav and Social -->
+    <div class="footer-bottom">
+      <div class="footer-links">
+        <a href="#">Blog</a>
+        <a href="#">FAQs</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </div>
+
+    <!-- Footer Credits -->
+    <div class="footer-credits">
+      ©2018 All Rights Reserved. Made with <span class="heart">♥</span>
+    </div>
+  </footer>
+  <script>
+    function subscribe(event) {
+      event.preventDefault();
+      alert("Thanks for subscribing!");
+      event.target.reset();
+    }
+  </script>
+  <script src="../js/nav.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+
+</body>
+
+</html>

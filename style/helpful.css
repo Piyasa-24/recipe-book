@@ -1,0 +1,127 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Montserrat", serif;
+    }
+    @keyframes fadeSlideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .main-container {
+      padding: 2rem;
+      background-color: #f39f6fb5;
+    }
+    h1 {
+      text-align: center;
+      color: rgb(230, 107, 62);
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .tip-card {
+      background-color: blanchedalmond;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+      position: relative;
+      padding-top: 60px;
+      /* Animation */
+      opacity: 0;
+      animation: fadeSlideUp 0.6s ease forwards;
+    }
+
+    .icon-circle {
+      width: 50px;
+      height: 50px;
+      background-color: #f28c50;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -25px;
+      left: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon-circle i {
+      color: #fff;
+      font-size: 24px;
+      animation: crazy-animation 2s infinite ease-in-out;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    @keyframes crazy-animation {
+      0% {
+        transform: scale(1) rotate(0deg);
+      }
+
+      20% {
+        transform: scale(1.2) rotate(15deg);
+      }
+
+      40% {
+        transform: scale(0.9) rotate(-10deg);
+      }
+
+      60% {
+        transform: scale(1.1) rotate(10deg);
+      }
+
+      80% {
+        transform: scale(1) rotate(-5deg);
+      }
+
+      100% {
+        transform: scale(1) rotate(0deg);
+      }
+    }
+
+    .tip-card h2 {
+      margin-top: 0;
+      color: #f28c50;
+    }
+
+    .tip-card p {
+      margin: 10px 0;
+      color: #444;
+    }
+
+    .tip-card ul {
+      padding-left: 20px;
+      color: #333;
+    }
+
+    .tip-card ul li {
+      margin-bottom: 6px;
+    }
+
+    .image-description {
+      font-style: italic;
+      color: #777;
+    }
+
+    .why-helpful {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #555;
+    }

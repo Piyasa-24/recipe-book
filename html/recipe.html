@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">RECIPE PAGE</title>
+  <link rel="stylesheet" href="../style/style1.css" />
+  <link rel="stylesheet" href="../style/nav.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo" onclick="window.location.href='index.html'">Hungry Passport</div>
+
+    <div class="nav-options montserrat-semibold">
+      <a href="allrecipe.html">All Recipes</a>
+
+      <a href="#" class="dropdown-toggle">By nutrients <i class="fa-solid fa-caret-down"></i></a>
+      <div class="dropdown-menu nutrients-dropdown">
+        <a href="nutrients.html?nutrient=protein">Protein Rich</a>
+        <a href="nutrients.html?nutrient=carb">Carbs Rich</a>
+        <a href="nutrients.html?nutrient=fibre">Fiber Rich</a>
+        <a href="nutrients.html?nutrient=vitamin">Vitamin Rich</a>
+        <a href="nutrients.html?nutrient=mineral">Minerals Rich</a>
+      </div>
+
+      <a href="#" class="dropdown-toggle">By countries <i class="fa-solid fa-caret-down"></i></a>
+      <div class="dropdown-menu countries-dropdown">
+        <a href="country.html?cuisine=american">USA</a>
+        <a href="country.html?cuisine=italian">Italy</a>
+        <a href="country.html?cuisine=indian">India</a>
+        <a href="country.html?cuisine=japanese">Japan</a>
+        <a href="country.html?cuisine=mexican">Mexico</a>
+      </div>
+
+      <a href="occasions.html">Occasions</a>
+      <a href="helpfulTips.html">Helpful tips</a>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-bar-input" placeholder="Search any recipe here" class="montserrat" />
+      </div>
+    </div>
+
+    <div class="other-options">
+      <i class="fa-solid fa-house" onclick="window.location.href='index.html'"></i>
+      <i class="fas fa-user" onclick="window.location.href='login.html'"></i>
+    </div>
+  </nav>
+
+  <div id="main-container">
+    <div class="recipe-header">
+      <div class="recipe-title">
+        <div class="common-tag">Let's Cook</div>
+        <h1 class="recipe-heading">{{RECIPE_NAME_PART1}} <span
+            class="highlight">{{RECIPE_NAME_PART2}}</span><br>{{RECIPE_NAME_PART3}}</h1>
+      </div>
+      <div class="main-img-container">
+        <img src='' alt="Biriyani Image" class="recipe-image">
+      </div>
+    </div>
+    <div class="recipe-info-bar">
+      <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-bowl-food"></i></div>
+        <div>
+          <div class="info-label">Category</div>
+          <div class="info-value">{{CATEGORY}}</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-person"></i></div>
+        <div>
+          <div class="info-label">Servings</div>
+          <div class="info-value">{{SERVINGS}} persons</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-bell"></i></div>
+        <div>
+          <div class="info-label">Prep Time</div>
+          <div class="info-value">{{PREP_TIME}} mins</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+        <div>
+          <div class="info-label">Cook Time</div>
+          <div class="info-value">{{COOK_TIME}} mins</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-star"></i></div>
+        <div>
+          <div class="info-label">Difficulty</div>
+          <div class="info-value">{{DIFFICULTY}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="recipe-information">
+      <div class="recipe-info-box1">
+        <div class="recipe-description">{{RECIPE_DESCRIPTION}}</div>
+        <div class="recipe-tags">
+          <div class="recipe-tags-title">Tags</div>
+          <div class="tags">{{RECIPE_TAGS}}</div>
+        </div>
+      </div>
+
+      <div class="chef-card">
+        <img src="" alt="Chef Avatar" class="chef-avatar" />
+        <div class="chef-info-overlay">
+          <div class="chef-name">{{CHEF_NAME}}</div>
+          <div class="chef-title">{{CHEF_TITLE}}</div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="recipe-content">
+      <div class="ingredient-container">
+        <div class="ingredient-title">Ingredients</div>
+        <div class="ingredient-list">{{INGREDIENTS_LIST}}</div>
+      </div>
+      <div class="nutritional-info-container">
+        <div class="nutritional-title">Nutritional Info</div>
+        <div class="nutritional-list">{{NUTRITION_INFO}}</div>
+      </div>
+    </div>
+    <div class="cooking-instruction">
+      <div class="instruction-title">Cooking <span class="highlight">Instructions</span></div>
+      <div class="instruction-list">{{INSTRUCTIONS_LIST}}</div>
+    </div>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

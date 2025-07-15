@@ -1,0 +1,129 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+
+      font-family: 'Montserrat', sans-serif;
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Black overlay */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    /* Ensure all elements are above the overlay */
+    nav,
+    .emoji,
+    h2,
+    .form-container {
+      position: relative;
+      z-index: 2;
+    }
+
+
+
+
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      justify-content: center;
+      gap: 2rem;
+      height: 100%;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .form-container {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      width: 340px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    form {
+      display: none;
+      margin-top: 20px;
+    }
+
+    form.active {
+      display: block;
+    }
+
+    .form-input{
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      font-size: 14px;
+      background: #fff;
+      color: #333;
+      transition: border-color 0.3s ease;
+      box-sizing: border-box;
+      font-family: "Montserrat", serif;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #ff7043;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff7043;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+      font-family: "Montserrat", serif;
+    }
+
+    button:hover {
+      background-color: #ff5722;
+    }
+
+    .toggle {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+    }
+
+    .toggle a {
+      color: #ff7043;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .toggle a:hover {
+      color: #ff5722;
+    }

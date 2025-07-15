@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>FOOD FOR SPECIAL DAYS</title>
+    <link rel="stylesheet" href="../style/occasions.css" />
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo" onclick="window.location.href='index.html'">Hungry Passport</div>
+
+    <div class="nav-options montserrat-semibold">
+      <a href="allrecipe.html">All Recipes</a>
+
+      <a href="#" class="dropdown-toggle">By nutrients <i class="fa-solid fa-caret-down"></i></a>
+      <div class="dropdown-menu nutrients-dropdown">
+        <a href="nutrients.html?nutrient=protein">Protein Rich</a>
+        <a href="nutrients.html?nutrient=carb">Carbs Rich</a>
+        <a href="nutrients.html?nutrient=fibre">Fiber Rich</a>
+        <a href="nutrients.html?nutrient=vitamin">Vitamin Rich</a>
+        <a href="nutrients.html?nutrient=mineral">Minerals Rich</a>
+      </div>
+
+      <a href="#" class="dropdown-toggle">By countries <i class="fa-solid fa-caret-down"></i></a>
+      <div class="dropdown-menu countries-dropdown">
+        <a href="country.html?cuisine=american">USA</a>
+        <a href="country.html?cuisine=italian">Italy</a>
+        <a href="country.html?cuisine=indian">India</a>
+        <a href="country.html?cuisine=japanese">Japan</a>
+        <a href="country.html?cuisine=mexican">Mexico</a>
+      </div>
+
+      <a href="occasions.html">Occasions</a>
+      <a href="helpfulTips.html">Helpful tips</a>
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-bar-input" placeholder="Search any recipe here" class="montserrat" />
+      </div>
+    </div>
+
+    <div class="other-options">
+      <i class="fa-solid fa-house" onclick="window.location.href='index.html'"></i>
+      <i class="fas fa-user" onclick="window.location.href='login.html'"></i>
+    </div>
+  </nav>
+
+    <div class="main-container">
+        <div class="durga-puja-section festival-container">
+            <h3 class="festival-heading">See our special recipes for Durga Puja</h3>
+            <div class="card-container">
+                <div class="card" onclick="window.location.href='recipe.html?recipe=bhogKhichuri'">
+                    <img src="https://media.istockphoto.com/id/1331625898/photo/khichdi-or-khichadi-a-popular-indian-recipe-the-food-is-made-of-dal-or-lentils-and-rice.jpg?s=612x612&w=0&k=20&c=XrHshcs4ddrl2AmTsEadLSVUajLgHkht2ZrUk7aVD24="
+                        alt="Bhog Khichuri Pic" class="card-image" />
+                    <div class="card-description">
+                        <h3>Bhog Khichuri</h3>
+                        <p>
+                            A sacred offering made from fragrant gobindobhog rice, moong dal, ghee, and mild spices.
+                            Served as part of the puja bhog, this wholesome dish is packed with tradition and flavor.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" onclick="window.location.href='recipe.html?recipe=labraSabzi'">
+                    <img src="https://media.istockphoto.com/id/2192664759/photo/mix-vegetable-curry-indian.jpg?s=612x612&w=0&k=20&c=GZGlULW5S9ylNtshQB-MFCY3A1gX-QAfMkIDTJcmj_Q="
+                        alt="Labra Pic" class="card-image" />
+                    <div class="card-description">
+                        <h3>Labra</h3>
+                        <p>
+                            A traditional Bengali mixed vegetable dish made with pumpkin, potato, brinjal, and seasonal
+                            produce.
+                            Mildly spiced and often served alongside bhog khichuri during Durga Puja.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" onclick="window.location.href='recipe.html?recipe=chanarPayesh'">
+                    <img src="https://media.istockphoto.com/id/1225083096/photo/famous-indian-dessert-kheer-or-payasam.jpg?s=612x612&w=0&k=20&c=c2bMFCr6MlFChZPiNhJVzSWbSVIrAZKYUVMN-u4G58U="
+                        alt="Chanar Payesh Pic" class="card-image" />
+                    <div class="card-description">
+                        <h3>Chanar Payesh</h3>
+                        <p>
+                            A delightful Bengali dessert made with fresh paneer (chana), milk, and cardamom.
+                            Slow-cooked to creamy perfection and garnished with nuts—ideal for festive celebrations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="christmas-section festival-container">
+            <h3 class="festival-heading ">See our special recipes for Christmas</h3>
+            <div class="card-container">
+
+                <!-- Recipe 1: Roast Chicken with Herbs -->
+                <div class="card" onclick="window.location.href='recipe.html?recipe=roastChickenHerbs'">
+                    <img src="https://media.istockphoto.com/id/1268693109/photo/roast-chicken.jpg?s=612x612&w=0&k=20&c=zGEkwHXuQD2kRX_ZniFaVKKNYId1_cet9Qb3S4OGusg="
+                        alt="Roast Chicken" class="card-image" />
+                    <div class="card-description">
+                        <h3>Roast Chicken with Herbs</h3>
+                        <p>
+                            Juicy whole chicken marinated with rosemary, thyme, garlic, and butter, then oven-roasted to
+                            golden perfection.
+                            A timeless Christmas centerpiece for your festive feast.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Stuffed Bell Peppers -->
+                <div class="card" onclick="window.location.href='recipe.html?recipe=stuffedBellPeppers'">
+                    <img src="https://media.istockphoto.com/id/642456684/photo/quinoa-stuffed-baked-bell-peppers-healthy-vegetarian-diet-food-concept-top-view.jpg?s=612x612&w=0&k=20&c=r1gKtCKskEQjbg7xn76P3ZCA6sHNBSmkt5vDgWQoN3o="
+                        alt="Stuffed Bell Peppers" class="card-image" />
+                    <div class="card-description">
+                        <h3>Stuffed Bell Peppers</h3>
+                        <p>
+                            Bell peppers filled with a flavorful mix of rice, cheese, herbs, and optional minced meat.
+                            Baked to perfection for a colorful and cozy Christmas meal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Classic Plum Cake -->
+                <div class="card" onclick="window.location.href='recipe.html?recipe=classicPlumCake'">
+                    <img src="https://media.istockphoto.com/id/1085043472/photo/piece-of-plum-cake-on-a-plate-with-ripe-plums-and-mint-leaves-wooden-table.jpg?s=612x612&w=0&k=20&c=Q4tU0D3seNY1cfUJnWnc6AVxgy6pyj_pBxBBhgX1jJg="
+                        alt="Plum Cake" class="card-image" />
+                    <div class="card-description">
+                        <h3>Classic Plum Cake</h3>
+                        <p>
+                            A festive Christmas cake packed with dried fruits, nuts, and warm spices.
+                            Rich, moist, and aged with rum or fruit juice—perfect with a cup of cocoa or wine.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="thanksgiving-section festival-container">
+            <h3 class="festival-heading">See our special recipes for Thanksgiving</h3>
+            <div class="card-container">
+
+                <!-- Recipe 1: Classic Roast Turkey -->
+                <div class="card" onclick="window.location.href='recipe.html?recipe=roastTurkey'">
+                    <img src="https://media.istockphoto.com/id/864774906/photo/organic-homemade-smoked-turkey-dinner-for-thanksgiving.jpg?s=612x612&w=0&k=20&c=kffGge-ZtEBxHFeWOV708110CVWt7S7KKl7xvECdxGk="
+                        alt="Roast Turkey" class="card-image" />
+                    <div class="card-description">
+                        <h3>Classic Roast Turkey</h3>
+                        <p>
+                            A Thanksgiving essential! Whole turkey seasoned with herbs, garlic, butter, and roasted
+                            until tender and golden.
+                            Served with rich gravy and cranberry sauce for a heartwarming holiday feast.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Creamy Mashed Potatoes -->
+                <div class="card" onclick="window.location.href='recipe.html?recipe=mashedPotatoes'">
+                    <img src="https://media.istockphoto.com/id/1968568983/photo/mashed-potatoes-in-a-serving-bowl-traditional-side-dish-for-dinner-or-celebration.jpg?s=612x612&w=0&k=20&c=8TSEWdq_bJh2Xylyo1psk0l8X6nIYN0y_iBRxl48P40="
+                        alt="Mashed Potatoes" class="card-image" />
+                    <div class="card-description">
+                        <h3>Creamy Mashed Potatoes</h3>
+                        <p>
+                            Smooth and buttery mashed potatoes whipped with cream and garlic.
+                            The perfect comforting side dish to pair with roast turkey and gravy.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Pumpkin Pie -->
+                <div class="card" onclick="window.location.href='recipe.html?recipe=pumpkinPie'">
+                    <img src="https://media.istockphoto.com/id/516248809/photo/homemade-pumpkin-pie-for-thanksgiving.jpg?s=612x612&w=0&k=20&c=pEHYeZDzY46-qhlGkRI_cEGm4cCGhbRpTMUHix8OQkQ="
+                        alt="Pumpkin Pie" class="card-image" />
+                    <div class="card-description">
+                        <h3>Pumpkin Pie</h3>
+                        <p>
+                            A classic Thanksgiving dessert made with spiced pumpkin puree in a flaky crust.
+                            Rich, smooth, and delicious—best served with whipped cream on top.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="../js/nav.js"></script>
+    <script src="../js/data.js"></script>
+</body>
+
+</html>
